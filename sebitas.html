@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="C:\Users\PC\Documents\style.css">
+	<title>SEBITAS</title>
+</head>
+<body><br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h1 align="center" style="color: skyblue;">Para sebitas</h1>
+	<br>
+	<br>
+	<div class="heart" position="rigth"></div>
+    </br>
+<style type="text/css">
+    .heart{
+	position: absolute;
+	height: 70px;
+	width: 70px;
+	background-color: #f20044;
+	position: center;
+	box-shadow: 10px 10px 90px #f20044;
+	animation: animHeart .6s linear infinite;
+}
+
+@keyframes animHeart{
+	0%{
+		transform: rotate(-45deg)scale(1.07);
+	}
+
+	80%{
+		transform: rotate(-45deg)scale(1);
+	}
+
+	100%{
+		transform: rotate(-45deg)scale(.8);
+	}
+}
+
+.heart::before{
+	content: '';
+	position: absolute;
+	height: 70px;
+	width: 70px;
+	background-color: #f20044;
+	box-shadow: -10px 10px 90px #f20044;
+	top: -50%;
+	border-radius: 50%;
+}
+
+.heart::after{
+	position: relative;
+	content: '';
+	position: absolute;
+	box-shadow: 10px -10px 90px #f20044;
+	height: 70px;
+	width: 70px;
+	background-color: #f20044;
+	right: -50%;
+	border-radius: 50%;
+}
+</style>
+</body>
+</html>
